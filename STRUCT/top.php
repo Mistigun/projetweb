@@ -1,0 +1,39 @@
+<?php
+define ("RACINE", "/PROJETFINALvoiture/");
+
+?>
+
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <title>Efreitchop</title>
+    <link rel="stylesheet" href="<?= RACINE ?>css/style.css">
+</head>
+<body>
+
+<script type="text/javascript" src="<?=RACINE?> PHP/transition.js"></script>
+
+
+<header>
+  <!-- <div class="headerlogo"> -->
+    
+    <a href="<?=RACINE?>index.php">
+      <img src="<?=RACINE?>IMAGE/efreit.png" alt="EFREITCHOP Logo" class="logo">
+    </a>
+    <nav>
+        <a href="<?=RACINE?>PAGES/racing.php">RACING</a>
+        <a href="<?=RACINE?>PAGES/sport.php">SPORTCAR</a>
+        <a href="<?=RACINE?>PAGES/aboutus.php">ABOUT US</a>
+    </nav>
+  <!-- </div> -->
+</header>
+
+
+
+
+
+
+
+

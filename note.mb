@@ -1,0 +1,112 @@
+<div class="video-banner" id="videoBanner">
+  <video autoplay muted loop playsinline>
+    <source src="<?= RACINE ?>VIDEO/video3.mp4" type="video/mp4">
+   
+  </video>
+  <div class="overlay">
+    <h1>LA EFREITCHOP</h1>
+    <button onclick="window.location.href='<?=RACINE?>/PAGES/racing.php'">
+      En savoir plus
+    </button>
+  </div>
+</div>
+
+<!-- Contenu en-dessous de la bannière -->
+<section style="height: 2000px;">
+  <h2>Contenu de la page</h2>
+  <p>Faites défiler pour voir la bannière disparaître.</p>
+</section>
+
+<!-- Script pour faire disparaître la bannière au scroll -->
+<script>
+  // Écoute l’événement "scroll" sur la fenêtre
+  window.addEventListener("scroll", function() {
+    const banner = document.getElementById("videoBanner");
+    // Si l’utilisateur a défilé de plus de 10px
+    if (window.scrollY > 10) {
+      // On ajoute une classe "hidden" (ou on peut faire un display: none)
+      banner.classList.add("hidden");
+    } else {
+      // Si on veut qu’elle réapparaisse quand on remonte tout en haut
+      banner.classList.remove("hidden");
+    }
+  });
+</script>
+
+<?php include './struct/bot.php'; ?>
+
+
+
+
+
+
+
+
+
+
+  /* Conteneur de la vidéo qui prend toute la fenêtre */
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;     /* Hauteur = la taille de la fenêtre du navigateur */
+  overflow: hidden;  /* Évite les barres de défilement si la vidéo déborde */
+  background-color: rgba(0, 0, 0, 0); /* Couleur de fond (au cas où la vidéo n'est pas chargée) */
+}
+
+/* Vidéo en plein écran, centrée */
+.video-banner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* S’assure que la vidéo couvre le conteneur */
+  z-index: -1;       /* Passe la vidéo derrière le contenu */
+}
+
+/* Overlay : texte et bouton par-dessus la vidéo */
+.video-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Calque semi-transparent si besoin, sinon enlever ou modifier */
+  background: rgba(0, 0, 0,0);
+
+  /* Alignement vertical/horizontal centré */
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center;
+
+  color: #fff;  /* Couleur du texte */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Exemple de style pour le titre */
+.video-banner .overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Exemple de style pour le bouton */
+.video-banner .overlay button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ff6600; /* Couleur orange ou autre */
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.video-banner .overlay button:hover {
+  background-color: #cc5200; /* Couleur un peu plus sombre au survol */
+}
