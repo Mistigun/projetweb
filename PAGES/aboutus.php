@@ -4,7 +4,9 @@ include '../struct/top.php';
 
 <body class="page-avec-bg">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="<?= RACINE ?>CSS/aymene.css">
+<link rel="stylesheet" href="<?= RACINE ?>CSS/mobile.css">
 </head>
 
 
@@ -20,6 +22,34 @@ include '../struct/top.php';
       <input type="submit" value="Envoyer">
   </form>
 </section>
+
+
+
+    <h2>Liste des inscrits</h2>
+    <table summary="">
+    <caption>Liste</caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+        include '../inc/connexion.php';
+
+        $demande = "SELECT * FROM clients";
+        $reponse = $auth->query($demande);
+        foreach($reponse AS $r):
+        ?>
+            <tr>
+                <td><?= $r['nom'] ?></td>
+                <td><?= $r['prenom'] ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+
 
 <?php
 include '../struct/bot.php';
