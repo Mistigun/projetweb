@@ -15,14 +15,12 @@ include "struct/top.php";
   
   <div class="overlay bottom-overlay">
     <p>Les voitures de l'EFREI</p>
+
     </div>
     </div>
 
 <main>
   
-
-  
-
 
 <article>
   <img src="<?= RACINE ?>IMAGE/sebchop1.png" alt="article">
@@ -43,12 +41,6 @@ Enfin, conscient de l’importance de l’éco-responsabilité et de l’accessi
 À l’inverse, la voiture de course est entièrement pensée pour la compétition : châssis monocoque en carbone, suspensions réglables dans tous les axes et aérodynamique très travaillée — ailes avant et arrière, diffuseurs et générateurs de vortex — permettent de maximiser l’appui et la rigidité. Le moteur, calé pour tourner à très haut régime, délivre souvent plus de 700 chevaux en GT3 et peut dépasser les 1 000 chevaux dans les prototypes hybrides LMP1/LMDh. La boîte séquentielle, commandée au volant, assure des passages de rapport ultrarapides, au prix d’un sacrifice total de confort.</p>
   <a href="PAGES/sport.php" class="btn">En savoir plus</a>
 </article>
-
-
-
-
-
-
 
 
 
