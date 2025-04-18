@@ -2,8 +2,13 @@
 include '../struct/top.php';
 ?>
 
-<main>
-<article>
+<body class="page-avec-bg">
+<head>
+<link rel="stylesheet" href="<?= RACINE ?>CSS/aymene.css">
+</head>
+
+
+<section class="formulaire">
 <h1>Restez à l'affut de nos nouveaux projets !</h1>
   <form action="traitement.php" method="post">
       <input type="email" name="email" placeholder="email" maxlength="200" id="email">
@@ -14,8 +19,7 @@ include '../struct/top.php';
       <input type="text" name="zip" placeholder="Code Postal" maxlength="5" id="zip">
       <input type="submit" value="Envoyer">
   </form>
-  </article>
-</main>
+</section>
 
 <?php
 include '../struct/bot.php';

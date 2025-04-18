@@ -9,7 +9,7 @@ define ("RACINE", "/PROJETFINALvoiture/");
     <meta name="description" content="">
     <meta charset="UTF-8">
     <title>Efreitchop</title>
-    <link rel="stylesheet" href="<?= RACINE ?>CSS/aymene.css">
+    <link rel="stylesheet" href="<?= RACINE ?>CSS/style.css">
 </head>
 <body>
 
