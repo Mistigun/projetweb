@@ -16,7 +16,7 @@ include '../struct/top.php';
       <input type="text" name="ville" placeholder="ville" maxlength="200" id="ville">
       <input type="text" name="firstname" placeholder="prénom" maxlength="200" id="firstname">
       <input type="text" name="adresse" placeholder="adresse" maxlength="400" id="adresse">
-      <input type="text" name="zip" placeholder="Code Postal" maxlength="5" id="zip">
+      <input type="text" name="zip" placeholder="Code Postal" minlegth="5" maxlength="5" id="zip">
       <input type="submit" value="Envoyer">
   </form>
 </section>
