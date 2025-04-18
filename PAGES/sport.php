@@ -1,7 +1,11 @@
 <?php
 include '../struct/top.php';
 ?>
-
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="<?= RACINE ?>CSS/seb.css">
+<link rel="stylesheet" href="<?= RACINE ?>CSS/mobile.css">
+</head>
  <main>
  <section class="car-gallery">
         <div class="img-row">

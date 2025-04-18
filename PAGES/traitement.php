@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 if(isset($_POST['lastname']) && !empty($_POST['lastname']) && !empty($_POST['firstname']) && !empty($_POST['a']) && !empty($_POST['b']) && !empty($_POST['c'])){
     
@@ -8,7 +8,7 @@ $adresse = htmlspecialchars($_POST['a']);
 $cp = htmlspecialchars($_POST['b']);
 $ville = htmlspecialchars($_POST['c']);
 
-$auth = new PDO ('mysql:server=localhost:8889;dbname=DBPHPB1CS1', 'root', 'root');
+$auth = new PDO ('mysql:server=localhost;dbname=DBPHPB1CS1', 'root', '');
 $sql = "INSERT INTO clients (nom, prenom, adresse, code_postal, ville) VALUES ('$nom', '$prenom','$adresse','$cp','$ville')";
 
 if($auth->query($sql)){
@@ -19,4 +19,4 @@ if($auth->query($sql)){
 
 }else {
     header('Location:eval1.php');
-} -->
+} 
