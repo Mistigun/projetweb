@@ -6,6 +6,9 @@ include '../struct/top.php';
 <link rel="stylesheet" href="<?= RACINE ?>/CSS/seb.css">
 <link rel="stylesheet" href="<?= RACINE ?>/CSS/mobile.css">
 </head>
+
+<script src="<?= RACINE ?>/PHP/image.js"></script>
+
 <main>
     <section class="car-gallery">
         <div class="img-row">
@@ -80,9 +83,10 @@ include '../struct/top.php';
         <li>Transmission : Séquentielle à 8 rapports</li>
     </ul></div>
     </section>
-    
 </main>
-
+<div id="lightbox" class="hidden">
+  <img id="lightbox-img" src="" alt="Agrandie" />
+</div>
 <?php
 include '../struct/bot.php';
 ?>

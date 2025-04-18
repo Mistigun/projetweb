@@ -1,18 +1,34 @@
 <?php
 include '../struct/top.php';
 ?>
+
+
+
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="<?= RACINE ?>CSS/seb.css">
 <link rel="stylesheet" href="<?= RACINE ?>CSS/mobile.css">
 </head>
+
+
+
+
+
+
+<script src="<?= RACINE ?>/PHP/image.js"></script>
+
+
+
  <main>
+
  <section class="car-gallery">
         <div class="img-row">
             <img src="<?=RACINE?>/IMAGE/chiron1.png" alt="chiron de face">
             <img src="<?=RACINE?>/IMAGE/chiron2.png" alt="chiron de coté">
             <img src="<?=RACINE?>/IMAGE/chiron3.png" alt="chiron interieur">
         </div>
+
         <p class="description">
             
         <div>
@@ -29,14 +45,21 @@ include '../struct/top.php';
         <li>Transmission : Robotisée a double embrayage à 7 rapports </li>
     </ul></div>
 
+
+
+
     <section class="car-gallery">
         <div class="img-row">
             <img src="<?=RACINE?>/IMAGE/F40 1.png" alt="">
             <img src="<?=RACINE?>/IMAGE/F40 2.png" alt="">
             <img src="<?=RACINE?>/IMAGE/F40 3.png" alt="">
         </div>
+
+
         <p class="description">
             
+
+
         <div>
         <h1>Ferrari F40</h1><br>
         <h3>La Ferrari F40 est une supercar du constructeur automobile italien Ferrari, produite de 1987 à 1992. Elle succède à la Ferrari 288 GTO, et est commercialisée pour fêter les quarante ans de la marque. Ultime création d'Enzo Ferrari, elle est au moment de sa sortie la voiture la plus rapide, la plus puissante et la plus chère de l'histoire de l'automobile[1].</h3><br>
@@ -51,14 +74,23 @@ include '../struct/top.php';
         <li>Transmission : Manuelle à 5 rapports </li>
     </ul></div>
 
+
+
+
     <section class="car-gallery">
         <div class="img-row">
             <img src="<?=RACINE?>/IMAGE/countach1.png" alt="countach face">
             <img src="<?=RACINE?>/IMAGE/countach2.png" alt="countach coté">
             <img src="<?=RACINE?>/IMAGE/countach3.png" alt="countach intérieur">
         </div>
+
+
+
         <p class="description">
             
+
+
+
         <div>
         <h1>Lamborghini Countach</h1><br>
         <h3>La Lamborghini Countach est une supercar GT à moteur V12 du constructeur automobile italien Lamborghini, produite à 2 042 exemplaires entre 1974 et 1990. Elle est, après la Lamborghini Miura (1966-1973) et avant la Lamborghini Diablo (1990-2001), une des voitures de sport de série les plus rapides, performantes et emblématiques de son époque.</h3><br>
@@ -73,6 +105,15 @@ include '../struct/top.php';
         <li>Transmission : Manuelle à 5 rapports  </li>
     </ul></div>
 </main>
+
+
+
+
+<div id="lightbox" class="hidden">
+  <img id="lightbox-img" src="" alt="Agrandie" />
+</div>
+
+
 
 
 
