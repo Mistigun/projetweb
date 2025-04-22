@@ -6,14 +6,17 @@ define ("RACINE", "/PROJETFINALvoiture/");
 <!DOCTYPE html>
 <html lang = "fr">
 <head>
-    <meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8">
     <title>Efreitchop</title>
-    <link rel="stylesheet" href="<?= RACINE ?>CSS/style.css">
+
+    <link rel="stylesheet" href="<?= RACINE ?>/CSS/mobile.css">
+
 </head>
 <body>
 
-<script type="text/javascript" src="<?=RACINE?> PHP/transition.js"></script>
+<!-- <script type="text/javascript" src="<?=RACINE?> PHP/transition.js"></script> -->
 
 
 <header>

@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+  
+    html, body {
+      width: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background: rgba(0, 0, 0, 0.1);
+      color: #fff;
+      overflow-x: hidden;
+    }
+  
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    header {
+      width: 100%;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+    }
+    header img {
+      height: 75px;
+      display: block;
+    }
+  
+    nav {
+      width: 80%;
+      margin: 1em auto;
+      display: flex;
+      justify-content: space-evenly;
+      color: #fff;
+    }
+    nav a {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    aside img {
+      display: block;
+      width: 60%;
+      height: auto;
+      margin: 2em auto;
+    }
+  
+    main {
+      width: 80%;
+      margin: 5vh auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 4rem;
+    }
+    main article {
+      width: 100%;
+      padding: 1%;
+      border-radius: 4px;
+      box-shadow: 0 0 5px #666;
+      background: rgba(0,0,0,0.2);
+    }
+    main article img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 1rem;
+    }
+    main article p {
+      font-size: large;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+  
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #fff;
+    }
+  
+    .video-banner {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: transparent;
+    }
+    .video-banner video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+    .video-banner .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      background: transparent;
+    }
+    .video-banner .overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    html.page-avec-bg, .page-avec-bg {
+        background: url('../IMAGE/arriereplan.png') no-repeat center center fixed;
+        background-size: cover;
+      }
+    
+      .formulaire {
+        width: 80%;
+        margin: 2em auto;
+        padding: 1.5em;
+        border: 2px solid green;
+        border-radius: 12px;
+        background-color: #000;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 2;
+      }
+      .formulaire h1,
+      .formulaire form {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .formulaire input {
+        width: 100%;
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 4px;
+        border: 1px solid #333;
+        background: #222;
+        color: #fff;
+      }
+    
+      
+      header, nav {
+        background: rgba(0, 0, 0, 1);
+      }
+      main {
+        width: 100%;
+        margin: 150px auto 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+      }
+      main article {
+        width: 100%;
+        padding: 1%;
+        box-shadow: 0 0 5px #666;
+      }
+      main article img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 30px;
+      }
+    }
+    
